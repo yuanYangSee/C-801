@@ -35,8 +35,8 @@ namespace FpCapture
     public partial class Fprinter : Form
     {
 
-        FPSPLIT_INFO_[] fpslit_info_ = new FPSPLIT_INFO_[10];
-
+      //  FPSPLIT_INFO_[] fpslit_info_ = new FPSPLIT_INFO_[10];
+        IntPtr infosIntptr;
        
 
 
@@ -72,15 +72,16 @@ namespace FpCapture
             m_BMPFrame = new byte[CDCW * CDCH + 1078];
 
 
-            for (int i = 0; i < 10;i++ )
-            {
-                fpslit_info_[i] = new FPSPLIT_INFO_();
-                fpslit_info_[i].pRawDatapOutBuf=new byte[SplitW*SplitH];
-            }
+            //for (int i = 0; i < 10;i++ )
+            //{
+            //   // fpslit_info_[i] = new FPSPLIT_INFO_();
+            //    fpslit_info_[i].pRawDatapOutBuf=new byte[SplitW*SplitH];
+            //}
 
-            
-              
-  
+
+
+            int size=Marshal.SizeOf(typeof(FPSPLIT_INFO_));
+            infosIntptr = Marshal.AllocHGlobal(size * 10);
             
                            
         }
@@ -198,7 +199,7 @@ namespace FpCapture
         {
             Program.LIVESCAN_GetFPRawData(0, m_CutFrame);
 
-            Program.FPSPLIT_DoSplit(m_CutFrame, CDCW, CDCH, 1, SplitW, SplitH, ref FpNum, ref fpslit_info_[0] );
+            Program.FPSPLIT_DoSplit(m_CutFrame, CDCW, CDCH, 1, SplitW, SplitH, ref FpNum, infosIntptr);
           
           
 
