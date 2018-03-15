@@ -1,0 +1,24 @@
+H:\F\other-work\交接文件\吴歌离职交接程序及文档\6dd.300B的DEMO（VS2005版本，C#语言版本，VC6.0版本（中文版英文版））（加真假指）\C#语言版本\FpCapture C#DEMO IsLiving\FpCapture\obj\Debug\FpCapture.exe
+H:\F\other-work\交接文件\吴歌离职交接程序及文档\6dd.300B的DEMO（VS2005版本，C#语言版本，VC6.0版本（中文版英文版））（加真假指）\C#语言版本\FpCapture C#DEMO IsLiving\FpCapture\obj\Debug\FpCapture.pdb
+H:\F\other-work\交接文件\吴歌离职交接程序及文档\6dd.300B的DEMO（VS2005版本，C#语言版本，VC6.0版本（中文版英文版））（加真假指）\C#语言版本\FpCapture C#DEMO IsLiving\FpCapture\bin\Debug\FpCapture.exe
+H:\F\other-work\交接文件\吴歌离职交接程序及文档\6dd.300B的DEMO（VS2005版本，C#语言版本，VC6.0版本（中文版英文版））（加真假指）\C#语言版本\FpCapture C#DEMO IsLiving\FpCapture\bin\Debug\FpCapture.pdb
+H:\F\other-work\交接文件\吴歌离职交接程序及文档\6dd.300B的DEMO（VS2005版本，C#语言版本，VC6.0版本（中文版英文版））（加真假指）\C#语言版本\FpCapture C#DEMO IsLiving\FpCapture\obj\Debug\FpCapture.csprojResolveAssemblyReference.cache
+H:\F\other-work\交接文件\吴歌离职交接程序及文档\6dd.300B的DEMO（VS2005版本，C#语言版本，VC6.0版本（中文版英文版））（加真假指）\C#语言版本\FpCapture C#DEMO IsLiving\FpCapture\obj\Debug\FpCapture.Fprinter.resources
+H:\F\other-work\交接文件\吴歌离职交接程序及文档\6dd.300B的DEMO（VS2005版本，C#语言版本，VC6.0版本（中文版英文版））（加真假指）\C#语言版本\FpCapture C#DEMO IsLiving\FpCapture\obj\Debug\FpCapture.Properties.Resources.resources
+H:\F\other-work\交接文件\吴歌离职交接程序及文档\6dd.300B的DEMO（VS2005版本，C#语言版本，VC6.0版本（中文版英文版））（加真假指）\C#语言版本\FpCapture C#DEMO IsLiving\FpCapture\obj\Debug\FpCapture.csproj.GenerateResource.Cache
+D:\我的文档\Desktop\C#学习\C#语言版本\FpCapture C#DEMO IsLiving\FpCapture\bin\Debug\FpCapture.exe
+D:\我的文档\Desktop\C#学习\C#语言版本\FpCapture C#DEMO IsLiving\FpCapture\bin\Debug\FpCapture.pdb
+D:\我的文档\Desktop\C#学习\C#语言版本\FpCapture C#DEMO IsLiving\FpCapture\obj\Debug\FpCapture.Fprinter.resources
+D:\我的文档\Desktop\C#学习\C#语言版本\FpCapture C#DEMO IsLiving\FpCapture\obj\Debug\FpCapture.Properties.Resources.resources
+D:\我的文档\Desktop\C#学习\C#语言版本\FpCapture C#DEMO IsLiving\FpCapture\obj\Debug\FpCapture.csproj.GenerateResource.Cache
+D:\我的文档\Desktop\C#学习\C#语言版本\FpCapture C#DEMO IsLiving\FpCapture\obj\Debug\FpCapture.exe
+D:\我的文档\Desktop\C#学习\C#语言版本\FpCapture C#DEMO IsLiving\FpCapture\obj\Debug\FpCapture.pdb
+D:\我的文档\Desktop\C#学习\C#语言版本\FpCapture C#DEMO IsLiving\FpCapture\obj\Debug\FpCapture.csprojResolveAssemblyReference.cache
+F:\工作\04-软件及驱动\CodeSpace\C#801\FpCapture\obj\Debug\FpCapture.exe
+F:\工作\04-软件及驱动\CodeSpace\C#801\FpCapture\bin\Debug\FpCapture.exe
+F:\工作\04-软件及驱动\CodeSpace\C#801\FpCapture\bin\Debug\FpCapture.pdb
+F:\工作\04-软件及驱动\CodeSpace\C#801\FpCapture\obj\Debug\FpCapture.csprojResolveAssemblyReference.cache
+F:\工作\04-软件及驱动\CodeSpace\C#801\FpCapture\obj\Debug\FpCapture.Fprinter.resources
+F:\工作\04-软件及驱动\CodeSpace\C#801\FpCapture\obj\Debug\FpCapture.Properties.Resources.resources
+F:\工作\04-软件及驱动\CodeSpace\C#801\FpCapture\obj\Debug\FpCapture.csproj.GenerateResource.Cache
+F:\工作\04-软件及驱动\CodeSpace\C#801\FpCapture\obj\Debug\FpCapture.pdb

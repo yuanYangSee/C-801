@@ -1,0 +1,48 @@
+G:\R300\FpCapture\FpCapture\bin\Debug\FpCapture.exe
+G:\R300\FpCapture\FpCapture\bin\Debug\FpCapture.pdb
+G:\R300\FpCapture\FpCapture\obj\Debug\ResolveAssemblyReference.cache
+G:\R300\FpCapture\FpCapture\obj\Debug\FpCapture.Fprinter.resources
+G:\R300\FpCapture\FpCapture\obj\Debug\FpCapture.Properties.Resources.resources
+G:\R300\FpCapture\FpCapture\obj\Debug\FpCapture.csproj.GenerateResource.Cache
+G:\R300\FpCapture\FpCapture\obj\Debug\FpCapture.exe
+G:\R300\FpCapture\FpCapture\obj\Debug\FpCapture.pdb
+G:\R300\FpCapture\FpCapture\obj\Release\ResolveAssemblyReference.cache
+G:\R300\FpCapture\FpCapture\obj\Release\FpCapture.Fprinter.resources
+G:\R300\FpCapture\FpCapture\obj\Release\FpCapture.Properties.Resources.resources
+G:\R300\FpCapture\FpCapture\obj\Release\FpCapture.csproj.GenerateResource.Cache
+G:\R300\FpCapture\FpCapture\bin\Release\FpCapture.exe
+G:\R300\FpCapture\FpCapture\bin\Release\FpCapture.pdb
+G:\R300\FpCapture\FpCapture\obj\Release\FpCapture.exe
+G:\R300\FpCapture\FpCapture\obj\Release\FpCapture.pdb
+G:\R300\FpCapture C#\FpCapture\bin\Debug\FpCapture.exe
+G:\R300\FpCapture C#\FpCapture\bin\Debug\FpCapture.pdb
+G:\R300\FpCapture C#\FpCapture\obj\Debug\ResolveAssemblyReference.cache
+G:\R300\FpCapture C#\FpCapture\obj\Debug\FpCapture.Fprinter.resources
+G:\R300\FpCapture C#\FpCapture\obj\Debug\FpCapture.Properties.Resources.resources
+G:\R300\FpCapture C#\FpCapture\obj\Debug\FpCapture.csproj.GenerateResource.Cache
+G:\R300\FpCapture C#\FpCapture\obj\Debug\FpCapture.exe
+G:\R300\FpCapture C#\FpCapture\obj\Debug\FpCapture.pdb
+G:\R300\FpCapture C#\FpCapture\bin\Release\FpCapture.exe
+G:\R300\FpCapture C#\FpCapture\bin\Release\FpCapture.pdb
+G:\R300\FpCapture C#\FpCapture\obj\Release\ResolveAssemblyReference.cache
+G:\R300\FpCapture C#\FpCapture\obj\Release\FpCapture.Fprinter.resources
+G:\R300\FpCapture C#\FpCapture\obj\Release\FpCapture.Properties.Resources.resources
+G:\R300\FpCapture C#\FpCapture\obj\Release\FpCapture.csproj.GenerateResource.Cache
+G:\R300\FpCapture C#\FpCapture\obj\Release\FpCapture.exe
+G:\R300\FpCapture C#\FpCapture\obj\Release\FpCapture.pdb
+G:\300B 20160119\FpCapture C#DEMO IsLiving\FpCapture\bin\Release\FpCapture.exe
+G:\300B 20160119\FpCapture C#DEMO IsLiving\FpCapture\bin\Release\FpCapture.pdb
+G:\300B 20160119\FpCapture C#DEMO IsLiving\FpCapture\obj\Release\ResolveAssemblyReference.cache
+G:\300B 20160119\FpCapture C#DEMO IsLiving\FpCapture\obj\Release\FpCapture.Fprinter.resources
+G:\300B 20160119\FpCapture C#DEMO IsLiving\FpCapture\obj\Release\FpCapture.Properties.Resources.resources
+G:\300B 20160119\FpCapture C#DEMO IsLiving\FpCapture\obj\Release\FpCapture.csproj.GenerateResource.Cache
+G:\300B 20160119\FpCapture C#DEMO IsLiving\FpCapture\obj\Release\FpCapture.exe
+G:\300B 20160119\FpCapture C#DEMO IsLiving\FpCapture\obj\Release\FpCapture.pdb
+G:\300B 20160119\FpCapture C#DEMO IsLiving\FpCapture\bin\Debug\FpCapture.exe
+G:\300B 20160119\FpCapture C#DEMO IsLiving\FpCapture\bin\Debug\FpCapture.pdb
+G:\300B 20160119\FpCapture C#DEMO IsLiving\FpCapture\obj\Debug\ResolveAssemblyReference.cache
+G:\300B 20160119\FpCapture C#DEMO IsLiving\FpCapture\obj\Debug\FpCapture.Fprinter.resources
+G:\300B 20160119\FpCapture C#DEMO IsLiving\FpCapture\obj\Debug\FpCapture.Properties.Resources.resources
+G:\300B 20160119\FpCapture C#DEMO IsLiving\FpCapture\obj\Debug\FpCapture.csproj.GenerateResource.Cache
+G:\300B 20160119\FpCapture C#DEMO IsLiving\FpCapture\obj\Debug\FpCapture.exe
+G:\300B 20160119\FpCapture C#DEMO IsLiving\FpCapture\obj\Debug\FpCapture.pdb
