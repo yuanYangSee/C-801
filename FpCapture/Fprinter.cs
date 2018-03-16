@@ -33,7 +33,7 @@ enum LIVESCAN_ERR{
 namespace FpCapture
 {
 
-    [StructLayout(LayoutKind.Sequential)]
+    [StructLayout(LayoutKind.Sequential,Pack=1)]
     public struct FPSPLIT_INFO_
     {
         public int x;
@@ -42,9 +42,8 @@ namespace FpCapture
         //unsigned char quality;
         [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 3)]
         public string reserved;
-     //   [MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 1)]
+        [MarshalAs(UnmanagedType.ByValArray,SizeConst=144000)]
         public byte[] pRawDatapOutBuf;
-        
     } ;
 
 
@@ -53,7 +52,7 @@ namespace FpCapture
     {
 
         FPSPLIT_INFO_[] fpslit_info_ = new FPSPLIT_INFO_[10];
-        
+      
        
 
 
@@ -89,11 +88,12 @@ namespace FpCapture
             m_BMPFrame = new byte[CDCW * CDCH + 1078];
 
 
-            for (int i = 0; i < 10; i++)
-            {
-                fpslit_info_[i] = new FPSPLIT_INFO_();
-                fpslit_info_[i].pRawDatapOutBuf = new byte[500 * 600];
-            }                     
+            //for (int i = 0; i < 10; i++)
+            //{
+            //   fpslit_info_[i] = new FPSPLIT_INFO_();
+            //    fpslit_info_[i].pRawDatapOutBuf = new byte[SplitW * SplitH];
+            //}             
+        
                           
         }
 
@@ -210,10 +210,12 @@ namespace FpCapture
         {
             Program.LIVESCAN_GetFPRawData(0, m_CutFrame);
 
-            int DoSplitResult=Program.FPSPLIT_DoSplit(m_CutFrame, CDCW, CDCH, 1, SplitW, SplitH, ref FpNum, ref fpslit_info_);
-            Console.Write(" DoSplitResult=" + DoSplitResult);
-          
+      //      int DoSplitResult = Program.FPSPLIT_DoSplit(m_CutFrame, CDCW, CDCH, 1, SplitW, SplitH, ref FpNum, );
+       //     Console.Write(" DoSplitResult=" + DoSplitResult);
 
+            Bmpdata = BytesToBmp(m_CutFrame, new Size(CDCW, CDCH));
+            IDC_Image.Image = resizeImage(Bmpdata, IDC_Image.Width, IDC_Image.Height);
+            
             
            
 
@@ -221,9 +223,7 @@ namespace FpCapture
 
        //     Console.Write("z=" + z);
 
-            Bmpdata = BytesToBmp(m_CutFrame, new Size(CDCW, CDCH));
-            IDC_Image.Image = resizeImage(Bmpdata, IDC_Image.Width, IDC_Image.Height);
-            
+          
            
           
                  
@@ -460,25 +460,20 @@ namespace FpCapture
          }            
           
         }
-
+        IntPtr infosIntptr;
 
         //²ð·Ö
         private void Button_Split_Click(object sender, EventArgs e)
         {
+            int size = Marshal.SizeOf(typeof(FPSPLIT_INFO_));
+            infosIntptr = Marshal.AllocHGlobal(size * 10);  
+
             Program.LIVESCAN_BeginCapture(0);
-            
+
             Program.LIVESCAN_GetFPRawData(0, m_CutFrame);
-   //         for(int i=0;i<m_CutFrame.Length;i++)
-    //        {
-      //          Console.Write(m_CutFrame[i]);
-       //     }
 
-            
-
-
-     //       int z = Program.FPSPLIT_DoSplit(m_CutFrame, CDCW, CDCH, 1, SplitW, SplitH, out FpNum, ref fpSplit_info[0]);
-
-     //       Console.Write("z=" + z);
+            int DoSplitResult = Program.FPSPLIT_DoSplit(m_CutFrame, CDCW, CDCH, 1, SplitW, SplitH, ref FpNum, infosIntptr);
+            Console.Write(" DoSplitResult=" + DoSplitResult);
 
             Bmpdata = BytesToBmp(m_CutFrame, new Size(CDCW, CDCH));
             IDC_Image.Image = resizeImage(Bmpdata, IDC_Image.Width, IDC_Image.Height);

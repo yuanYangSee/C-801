@@ -120,8 +120,8 @@ namespace FpCapture
     //        int nPreview,int nSplitW, int nSplitH, out int pnFpNum,  ref FPSPLIT_INFO pInfo);
 
         public  static extern int FPSPLIT_DoSplit([MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 1)] byte[] pBmpData,
-            int nImgW, int nImgH, int nPreview, int nSplitW, int nSplitH, 
-            ref int pnFpNum, ref FPSPLIT_INFO_[] pInfo);
+            int nImgW, int nImgH, int nPreview, int nSplitW, int nSplitH,
+            ref int pnFpNum, IntPtr infosIntPtr);
 
         [DllImport("FpSplit.dll")]
         public static extern int FPSPLIT_SaveToBmp([MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 1)] byte[] pBmpData, int nImgW, int nImgH, string pFile);
