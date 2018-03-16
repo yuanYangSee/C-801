@@ -32,11 +32,28 @@ enum LIVESCAN_ERR{
 
 namespace FpCapture
 {
+
+    [StructLayout(LayoutKind.Sequential)]
+    public struct FPSPLIT_INFO_
+    {
+        public int x;
+        public int y;
+        public int angle;
+        //unsigned char quality;
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 3)]
+        public string reserved;
+     //   [MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 1)]
+        public byte[] pRawDatapOutBuf;
+        
+    } ;
+
+
+
     public partial class Fprinter : Form
     {
 
-      //  FPSPLIT_INFO_[] fpslit_info_ = new FPSPLIT_INFO_[10];
-        IntPtr infosIntptr;
+        FPSPLIT_INFO_[] fpslit_info_ = new FPSPLIT_INFO_[10];
+        
        
 
 
@@ -72,18 +89,12 @@ namespace FpCapture
             m_BMPFrame = new byte[CDCW * CDCH + 1078];
 
 
-            //for (int i = 0; i < 10;i++ )
-            //{
-            //   // fpslit_info_[i] = new FPSPLIT_INFO_();
-            //    fpslit_info_[i].pRawDatapOutBuf=new byte[SplitW*SplitH];
-            //}
-
-
-
-            int size=Marshal.SizeOf(typeof(FPSPLIT_INFO_));
-            infosIntptr = Marshal.AllocHGlobal(size * 10);
-            
-                           
+            for (int i = 0; i < 10; i++)
+            {
+                fpslit_info_[i] = new FPSPLIT_INFO_();
+                fpslit_info_[i].pRawDatapOutBuf = new byte[500 * 600];
+            }                     
+                          
         }
 
         private void IDC_Device_Click(object sender, EventArgs e)
@@ -199,8 +210,8 @@ namespace FpCapture
         {
             Program.LIVESCAN_GetFPRawData(0, m_CutFrame);
 
-            Program.FPSPLIT_DoSplit(m_CutFrame, CDCW, CDCH, 1, SplitW, SplitH, ref FpNum, infosIntptr);
-          
+            int DoSplitResult=Program.FPSPLIT_DoSplit(m_CutFrame, CDCW, CDCH, 1, SplitW, SplitH, ref FpNum, ref fpslit_info_);
+            Console.Write(" DoSplitResult=" + DoSplitResult);
           
 
             

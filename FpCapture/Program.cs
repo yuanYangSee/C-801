@@ -7,18 +7,7 @@ using System.Text;
 namespace FpCapture
 {
 
-    [StructLayout(LayoutKind.Sequential,CharSet=CharSet.Ansi, Pack = 1)]
-    public struct FPSPLIT_INFO_
-       {
-              public int    x;
-              public int    y;
-              public int    angle;
-              //unsigned char quality;
-              [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 3)]
-              public string   reserved;
-              [MarshalAs(UnmanagedType.ByValTStr, SizeConst=144000)]
-              public byte[] pRawDatapOutBuf;
-       } ;
+    
 
 
 
@@ -130,8 +119,9 @@ namespace FpCapture
     //    public static extern int  FPSPLIT_DoSplit([MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 1)] byte[] pBmpData, int nImgW, int nImgH,
     //        int nPreview,int nSplitW, int nSplitH, out int pnFpNum,  ref FPSPLIT_INFO pInfo);
 
-        public unsafe static extern int FPSPLIT_DoSplit([MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 1)] byte[] pBmpData,
-            int nImgW, int nImgH, int nPreview, int nSplitW, int nSplitH, ref int pnFpNum, IntPtr pInfo);
+        public  static extern int FPSPLIT_DoSplit([MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 1)] byte[] pBmpData,
+            int nImgW, int nImgH, int nPreview, int nSplitW, int nSplitH, 
+            ref int pnFpNum, ref FPSPLIT_INFO_[] pInfo);
 
         [DllImport("FpSplit.dll")]
         public static extern int FPSPLIT_SaveToBmp([MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 1)] byte[] pBmpData, int nImgW, int nImgH, string pFile);
