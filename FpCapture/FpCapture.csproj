@@ -61,6 +61,7 @@
     <Compile Include="Fprinter.Designer.cs">
       <DependentUpon>Fprinter.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoadSplite.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Fprinter.resx">

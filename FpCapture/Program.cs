@@ -108,24 +108,7 @@ namespace FpCapture
 
 
        
-        //加载split.dll
-        [DllImport("FpSplit.dll")]
-        public static extern bool FPSPLIT_Init(int nImgW, int nImgH, int nPreview);
-         
-        [DllImport("FpSplit.dll")]
-         public static extern void  FPSPLIT_UnInit();
-
-        [DllImport("FpSplit.dll")]  
-    //    public static extern int  FPSPLIT_DoSplit([MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 1)] byte[] pBmpData, int nImgW, int nImgH,
-    //        int nPreview,int nSplitW, int nSplitH, out int pnFpNum,  ref FPSPLIT_INFO pInfo);
-
-        public  static extern int FPSPLIT_DoSplit([MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 1)] byte[] pBmpData,
-            int nImgW, int nImgH, int nPreview, int nSplitW, int nSplitH,
-            ref int pnFpNum, IntPtr infosIntPtr);
-
-        [DllImport("FpSplit.dll")]
-        public static extern int FPSPLIT_SaveToBmp([MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 1)] byte[] pBmpData, int nImgW, int nImgH, string pFile);
-
+      
 
         #endregion
     }
